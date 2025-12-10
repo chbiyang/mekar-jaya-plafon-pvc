@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chbiyang.github.io/mekar-jaya-plafon-pvc/sitemap.xml
