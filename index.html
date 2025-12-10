@@ -1,460 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Mekar Jaya Plafon PVC — Plafon PVC Premium BSD & Serpong</title>
-<meta name="description" content="Mekar Jaya Plafon PVC — Jasa pemasangan plafon PVC profesional di BSD, Serpong, Cisauk. Konsultasi & survey gratis." />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --blue:#0b4fa3;
-    --muted:#6b7280;
-    --bg:#f7f8fb;
-    --card:#ffffff;
-  }
-  *{box-sizing:border-box}
-  body{font-family:'Poppins',sans-serif;margin:0;background:var(--bg);color:#111;}
-  header{background:#0f1724;color:#fff;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:60;box-shadow:0 2px 8px rgba(2,6,23,0.15)}
-  header .brand{display:flex;align-items:center;gap:14px}
-  header .brand h1{font-size:18px;margin:0;font-weight:700}
-  header nav a{color:#cbd5e1;text-decoration:none;margin-left:18px;font-weight:600}
-  .hero{position:relative;padding:48px 6% 60px;border-bottom:1px solid rgba(0,0,0,0.04);overflow:hidden}
-  .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center}
-  .hero h2{font-size:34px;margin:0 0 14px;line-height:1.05;color:#07103a}
-  .hero p.lead{font-size:16px;color:var(--muted);margin:0 0 22px}
-  .btn-cta{display:inline-block;background:#0b3f63;color:#fff;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(11,63,99,0.18);transition:transform .18s ease,box-shadow .18s}
-  .btn-cta:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(11,63,99,0.22)}
-  .hero-right{background:#fff;padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(2,6,23,0.06);text-align:center}
-  .hero-right .map-preview{width:100%;height:220px;border-radius:10px;background:#ddd;overflow:hidden}
-  .features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:28px 6%}
-  .feature{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04);text-align:center;font-weight:600}
-  .section-title{font-size:24px;text-align:center;margin:6px 0 22px;font-weight:700;color:#07103a}
-  /* gallery grid */
-  .gallery-wrap{padding:36px 6% 80px}
-  .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-  .gallery-grid img{width:100%;height:180px;object-fit:cover;border-radius:10px;cursor:pointer;display:block}
-  /* lightbox */
-  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.88);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px}
-  .lightbox img{max-width:96%;max-height:92%;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,0.6)}
-  .lightbox .close{position:absolute;right:18px;top:18px;color:#fff;font-size:20px;background:rgba(255,255,255,0.06);padding:10px;border-radius:8px;cursor:pointer}
-  /* testimonials */
-  .testi{padding:28px 6%;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-  .testi .box{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04);font-style:italic}
-  /* contact */
-  .contact{padding:36px 6%;display:grid;grid-template-columns:1fr 340px;gap:26px;align-items:start}
-  .contact .card{padding:18px;background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
-  iframe.map{width:100%;height:260px;border-radius:10px;border:0}
-  footer{background:#0f1724;color:#cbd5e1;padding:28px 6%;text-align:center}
-  /* sticky CTA mobile */
-  .sticky-cta{display:none}
-  @media(max-width:980px){
-    .hero-grid{grid-template-columns:1fr;gap:18px}
-    .features{grid-template-columns:repeat(2,1fr);padding:20px}
-    .gallery-grid{grid-template-columns:repeat(2,1fr)}
-    .contact{grid-template-columns:1fr;gap:12px}
-    .sticky-cta{display:block;position:fixed;bottom:12px;left:50%;transform:translateX(-50%);z-index:9999;width:92%;max-width:520px}
-  }
-  @media(max-width:520px){
-    .gallery-grid{grid-template-columns:1fr}
-  }
-</style>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekar Jaya Plafon PVC</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
 
-<body>
+        header {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-<header>
-  <div class="brand">
-    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" style="border-radius:8px;background:#fff;padding:6px">
-      <rect width="24" height="24" rx="4" fill="#0b3f63"></rect>
-      <path d="M6 14L10 9L18 15" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <div>
-      <h1>Mekar Jaya Plafon PVC</h1>
-      <div style="font-size:12px;color:#a6b3c6">BSD · Serpong · Cisauk · Tangerang Selatan</div>
-    </div>
-  </div>
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
 
-  <nav>
-    <a href="#portofolio">Portofolio</a>
-    <a href="#kontak">Kontak</a>
-    <a class="wh" href="https://wa.me/6282144511655?text=Halo%20Mekar%20Jaya%2C%20saya%20mau%20konsultasi%20pasang%20plafon" target="_blank">Chat WA</a>
-  </nav>
-</header>
+        nav {
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-<section class="hero" id="home">
-  <div class="hero-grid">
-    <div>
-      <h2>Plafon PVC Premium untuk Rumah Modern</h2>
-      <p class="lead">Dipercaya banyak perumahan cluster premium di BSD & Serpong. Tukang ahli, finishing rapi, anti rayap & tahan lama.</p>
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-      <ul style="margin:18px 0 22px;color:var(--muted);line-height:1.7">
-        <li><strong>Garansi Pekerjaan 1 Tahun</strong></li>
-        <li><strong>Free Survey & Konsultasi</strong></li>
-        <li><strong>Variasi motif: Serat Kayu, Glossy, Doff</strong></li>
-      </ul>
+        .section {
+            padding: 40px 20px;
+            max-width: 1050px;
+            margin: auto;
+        }
 
-      <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <a class="btn-cta" href="https://wa.me/6282144511655?text=Halo%20Mekar%20Jaya%2C%20saya%20mau%20konsultasi">Konsultasi Gratis</a>
-        <a class="btn-cta" style="background:#ffd54d;color:#0b1630" href="#portofolio">Lihat Portofolio</a>
-      </div>
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #111;
+        }
 
-      <div style="margin-top:18px;color:var(--muted);font-size:14px">Nomor WA: <strong>0821-4451-1655</strong></div>
-    </div>
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: url("https://i.ibb.co.com/8nMhh53L/logo.png") center/180px no-repeat;
+            background-color: #ffffff;
+        }
 
-    <aside class="hero-right">
-      <div style="font-weight:700;margin-bottom:10px">Lokasi Kami</div>
-      <div class="map-preview">
-        <iframe class="map" src="https://www.google.com/maps?q=-6.3129339,106.6923516&z=16&output=embed" loading="lazy"></iframe>
-      </div>
-      <div style="margin-top:12px;font-size:14px;color:var(--muted)">Area layanan: BSD · Serpong · Cisauk · Tangerang Selatan</div>
-    </aside>
-  </div>
-</section>
+        .hero p {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #444;
+        }
 
-<section style="padding:22px 6% 6px">
-  <div class="section-title">Kenapa Pilih Mekar Jaya?</div>
-  <div class="features">
-    <div class="feature">Material PVC Premium — Anti Rayap</div>
-    <div class="feature">Pemasangan Cepat & Finishing Rapi</div>
-    <div class="feature">Garansi 1 Tahun</div>
-    <div class="feature">Free Survey & Konsultasi</div>
-  </div>
-</section>
+        .btn {
+            display: inline-block;
+            background: #ffae00;
+            padding: 15px 28px;
+            border-radius: 8px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
 
-<section id="portofolio" class="gallery-wrap">
-  <h2 class="section-title">Portofolio Proyek</h2>
-  <p class="center muted" style="max-width:800px;margin:0 auto 18px">Klik foto untuk melihat detail hasil pemasangan plafon PVC kami.</p>
+        /* GALERI */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 15px;
+        }
 
-  <div class="gallery-grid" id="gallery">
-    <!-- FOTO TETAP SAMA -->
-    <!-- (Foto tidak dihapus karena bukan bagian harga) -->
-    <!-- ... -->
-  </div>
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
 
-  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-    <div class="close" onclick="closeLightbox(event)">✕</div>
-    <img id="lightbox-img" src="" alt="Full view">
-  </div>
+        /* REVIEW */
+        .review-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
 
-  <div style="text-align:center;margin-top:18px">
-    <a class="btn-cta" href="https://wa.me/6282144511655">Konsultasi Gratis</a>
-  </div>
-</section>
-
-<section class="testi">
-  <div class="box">"Hasil pemasangan rapi dan sesuai jadwal. Recommended!" — <strong>Ibu Siti, BSD</strong></div>
-  <div class="box">"Tukangnya teliti, motif kayu bagus hasilnya." — <strong>Bpk. Hendra, Serpong</strong></div>
-  <div class="box">"Survey cepat, pelayanan ramah." — <strong>Ibu Rini, Cisauk</strong></div>
-</section>
-
-<section id="kontak" class="contact">
-  <div class="card">
-    <h3>Hubungi Mekar Jaya</h3>
-    <p class="muted">Tanyakan free survey, konsultasi, atau jadwal pemasangan.</p>
-
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282144511655" target="_blank">0821-4451-1655</a></p>
-    <p><strong>Jam Operasional:</strong> 08.00 – 20.00</p>
-
-    <div style="margin-top:12px">
-      <a class="btn-cta" href="https://wa.me/6282144511655">Konsultasi Gratis</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3>Lokasi</h3>
-    <p class="muted">BSD · Serpong · Cisauk · Tangerang Selatan</p>
-    <iframe class="map" src="https://www.google.com/maps?q=-6.3129339,106.6923516&z=16&output=embed" loading="lazy"></iframe>
-  </div>
-</section>
-
-<footer>
-  <div style="max-width:900px;margin:0 auto">
-    <div style="font-weight:700;margin-bottom:6px">Mekar Jaya Plafon PVC</div>
-    <div style="color:#98a2b3;margin-bottom:8px">Pemasangan plafon PVC — BSD · Serpong · Cisauk</div>
-    <div style="margin-bottom:8px">
-      <a href="https://wa.me/6282144511655" style="color:#fff;text-decoration:underline">0821-4451-1655 (WhatsApp)</a>
-    </div>
-    <div style="font-size:13px;color:#93a1b5">© 2025 Mekar Jaya Plafon PVC — Semua Hak Dilindungi</div>
-  </div>
-</footer>
-
-<div class="sticky-cta">
-  <a href="https://wa.me/6282144511655" class="btn-cta" style="width:100%;text-align:center">Konsultasi Gratis</a>
-</div>
-
-<script>
-  function openLightbox(src){
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox').style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox(e){
-    if(!e || e.target.id === 'lightbox' || e.target.classList.contains('close')){
-      document.getElementById('lightbox').style.display = 'none';
-      document.body.style.overflow = '';
-    }
-  }
-</script>
-
-</body>
-</html>  .card h3{margin:0 0 8px;font-size:18px}
-  .card p{color:var(--muted);margin:0 0 14px}
-  .price{font-weight:800;font-size:22px;color:#0b3f63}
-  /* gallery grid */
-  .gallery-wrap{padding:36px 6% 80px}
-  .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-  .gallery-grid img{width:100%;height:180px;object-fit:cover;border-radius:10px;cursor:pointer;display:block}
-  /* lightbox */
-  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.88);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px}
-  .lightbox img{max-width:96%;max-height:92%;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,0.6)}
-  .lightbox .close{position:absolute;right:18px;top:18px;color:#fff;font-size:20px;background:rgba(255,255,255,0.06);padding:10px;border-radius:8px;cursor:pointer}
-  /* testimonials */
-  .testi{padding:28px 6%;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-  .testi .box{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04);font-style:italic}
-  /* contact */
-  .contact{padding:36px 6%;display:grid;grid-template-columns:1fr 340px;gap:26px;align-items:start}
-  .contact .card{padding:18px}
-  iframe.map{width:100%;height:260px;border-radius:10px;border:0}
-  footer{background:#0f1724;color:#cbd5e1;padding:28px 6%;text-align:center}
-  /* sticky CTA mobile */
-  .sticky-cta{display:none}
-  @media(max-width:980px){
-    .hero-grid{grid-template-columns:1fr;gap:18px}
-    .features{grid-template-columns:repeat(2,1fr);padding:20px}
-    .gallery-grid{grid-template-columns:repeat(2,1fr)}
-    .contact{grid-template-columns:1fr;gap:12px}
-    .sticky-cta{display:block;position:fixed;bottom:12px;left:50%;transform:translateX(-50%);z-index:9999;width:92%;max-width:520px}
-    header{padding:12px 5%}
-  }
-  @media(max-width:520px){
-    .gallery-grid{grid-template-columns:repeat(1,1fr)}
-  }
-  /* small helpers */
-  .muted{color:var(--muted)}
-  .center{text-align:center}
-  a.wh{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;background:#0a6b4a;color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 20px rgba(10,107,74,0.18)}
-</style>
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <div class="brand">
-    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" style="border-radius:8px;background:#fff;padding:6px">
-      <rect width="24" height="24" rx="4" fill="#0b3f63"></rect>
-      <path d="M6 14L10 9L18 15" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <div>
-      <h1>Mekar Jaya Plafon PVC</h1>
-      <div style="font-size:12px;color:#a6b3c6">BSD · Serpong · Cisauk · Tangerang Selatan</div>
-    </div>
-  </div>
-
-  <nav>
-    <a href="#harga">Harga</a>
-    <a href="#portofolio">Portofolio</a>
-    <a href="#kontak">Kontak</a>
-    <a class="wh" href="https://wa.me/6282144511655?text=Halo%20Mekar%20Jaya%2C%20saya%20mau%20konsultasi%20pasang%20plafon" target="_blank">Chat WA</a>
-  </nav>
+    <h1>Mekar Jaya Plafon PVC</h1>
+    <p>Jasa Pasang Plafon PVC Profesional • Area BSD – Cisauk – Tangerang</p>
 </header>
 
-<section class="hero" id="home">
-  <div class="hero-grid">
-    <div>
-      <span class="price-badge">Mulai Rp 170.000 / m²</span>
-      <h2>Plafon PVC Premium untuk Rumah Modern</h2>
-      <p class="lead">Dipercaya banyak perumahan cluster premium di BSD & Serpong. Tukang ahli, finishing rapi, anti rayap & tahan lama.</p>
+<nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#review">Review</a>
+    <a href="#kontak">Kontak</a>
+</nav>
 
-      <ul style="margin:18px 0 22px;color:var(--muted);line-height:1.7">
-        <li><strong>Garansi Pekerjaan 1 Tahun</strong></li>
-        <li><strong>Free Survey & Konsultasi</strong></li>
-        <li><strong>Variasi motif: Serat Kayu, Glossy, Doff</strong></li>
-      </ul>
-
-      <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <a class="btn-cta" href="https://wa.me/6282144511655?text=Halo%20Mekar%20Jaya%2C%20saya%20mau%20cek%20harga%20plafon">Cek Harga & Konsultasi Gratis</a>
-        <a class="btn-cta" style="background:#ffd54d;color:#0b1630" href="#portofolio">Lihat Portofolio</a>
-      </div>
-
-      <div style="margin-top:18px;color:var(--muted);font-size:14px">Nomor WA: <strong>0821-4451-1655</strong></div>
-    </div>
-
-    <aside class="hero-right">
-      <div style="font-weight:700;margin-bottom:10px">Lokasi Kami</div>
-      <!-- Embedded small map preview -->
-      <div class="map-preview">
-        <iframe class="map" src="https://www.google.com/maps?q=-6.3129339,106.6923516&z=16&output=embed" loading="lazy"></iframe>
-      </div>
-
-      <div style="margin-top:12px;font-size:14px;color:var(--muted)">Area layanan: BSD · Serpong · Cisauk · Tangerang Selatan</div>
-    </aside>
-  </div>
+<section class="hero">
+    <p>Spesialis pemasangan plafon PVC, rapi, kuat, elegan & bergaransi.</p>
+    <a class="btn" href="https://wa.me/6282144511655?text=Halo%20saya%20ingin%20tanya%20pasang%20plafon%20PVC">Hubungi via WhatsApp</a>
 </section>
 
-<section style="padding:22px 6% 6px">
-  <div class="section-title">Kenapa Pilih Mekar Jaya?</div>
-  <div class="features">
-    <div class="feature">Material PVC Premium — Anti Rayap</div>
-    <div class="feature">Pemasangan Cepat & Finishing Rapi</div>
-    <div class="feature">Garansi 1 Tahun</div>
-    <div class="feature">Free Survey & Konsultasi</div>
-  </div>
+<section id="tentang" class="section">
+    <h2>Tentang Kami</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        Mekar Jaya adalah jasa profesional pemasangan plafon PVC dengan pengerjaan cepat, rapi, dan hasil akhir elegan. 
+        Kami melayani rumah, toko, kantor, ruko, hingga bangunan proyek area Tangerang & sekitarnya.
+    </p>
 </section>
 
-<section id="harga">
-  <h2 class="section-title">Paket & Harga</h2>
-  <div class="prices">
-    <div class="card">
-      <h3>Paket Hemat</h3>
-      <p class="muted">PVC Polos • Pemasangan standar</p>
-      <div class="price">Rp 150.000 / m²</div>
-      <p style="margin-top:8px">Cocok untuk ruang terbuka & langit-langit sederhana.</p>
+<section id="galeri" class="section">
+    <h2>Galeri Proyek</h2>
+    <div class="gallery">
+        <img src="https://i.ibb.co.com/4PvW4d1/plafon1.jpg">
+        <img src="https://i.ibb.co.com/yyB826x/plafon2.jpg">
+        <img src="https://i.ibb.co.com/4sNJdqv/plafon3.jpg">
+        <img src="https://i.ibb.co.com/2tLJk34/plafon4.jpg">
     </div>
-
-    <div class="card">
-      <h3>Paket Premium</h3>
-      <p class="muted">PVC motif serat kayu • Free lis</p>
-      <div class="price">Rp 170.000 / m²</div>
-      <p style="margin-top:8px">Finish elegan untuk ruang tamu & kamar utama.</p>
-    </div>
-
-    <div class="card">
-      <h3>Paket Eksklusif</h3>
-      <p class="muted">PVC glossy/motif • Free finishing</p>
-      <div class="price">Rp 175.000+ / m²</div>
-      <p style="margin-top:8px">Desain custom & lis tambahan (sesuai request).</p>
-    </div>
-  </div>
-  <div style="text-align:center;margin-bottom:36px">
-    <a class="btn-cta" href="https://wa.me/6282144511655?text=Halo%20Mekar%20Jaya%2C%20saya%20mau%20tahu%20detail%20paket%20dan%20jadwal%20survey">Pesan Survey Gratis</a>
-  </div>
 </section>
 
-<section id="portofolio" class="gallery-wrap">
-  <h2 class="section-title">Portofolio Proyek</h2>
-  <p class="center muted" style="max-width:800px;margin:0 auto 18px">Pilihan proyek terbaik yang menunjukkan kualitas finishing & variasi motif kami. Klik foto untuk lihat lebih besar.</p>
+<section id="review" class="section">
+    <h2>Review Pelanggan</h2>
 
-  <div class="gallery-grid" id="gallery">
-    <!-- 30 foto terpilih - klik untuk open lightbox -->
-    <img loading="lazy" src="https://i.postimg.cc/ZYLwNXxq/20230219-182028.jpg" alt="Proyek 1" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/5yfpGmby/20230219-182158.jpg" alt="Proyek 2" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/rsqgb9Mw/20230219-182224.jpg" alt="Proyek 3" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/Yqn8ngVg/20230219-182408.jpg" alt="Proyek 4" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/gJWKXKXP/20230219-182529.jpg" alt="Proyek 5" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/3N396ZY8/20230223-111742.jpg" alt="Proyek 6" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/GpYQmfpc/20230223-111834.jpg" alt="Proyek 7" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/HnT3KtdW/20230223-112042.jpg" alt="Proyek 8" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/Vvz4TFm1/20230401-133736.jpg" alt="Proyek 9" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/TPm93sPd/20230401-133803.jpg" alt="Proyek 10" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/qqQQdCvS/20230401-133852.jpg" alt="Proyek 11" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/jddZ4v8t/20230401-133916.jpg" alt="Proyek 12" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/wM9FPkgQ/20230519-200438.jpg" alt="Proyek 13" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/MHtt8jp5/20230519-202652.jpg" alt="Proyek 14" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/VLG4GMTy/3ba745842947440c9ffd36b8a23684b5.jpg" alt="Proyek 15" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/PJKKk8qG/44c7f1bd5c9d400b9edf9f366ee49cf5.jpg" alt="Proyek 16" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/4dg171Kh/b0b5a75c74da49ef88d180498280062a.jpg" alt="Proyek 17" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/L4VxPG3P/b6d310aaf5a3449e9e8d69c5c2824c26.jpg" alt="Proyek 18" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/4xYPrykV/d7e35074e0264a7ab0eb7e6464fe5215.jpg" alt="Proyek 19" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/j544zJNF/DSC-0258.jpg" alt="Proyek 20" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/sxKKRZgZ/DSC-0290.jpg" alt="Proyek 21" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/nV13mNGT/DSC-0291.jpg" alt="Proyek 22" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/VLG4GMhx/DSC-0292.jpg" alt="Proyek 23" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/L8GDRS2Q/DSC-0293.jpg" alt="Proyek 24" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/hvMMq7tM/DSC-0295.jpg" alt="Proyek 25" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/3RTZ4Zyj/DSC-0296.jpg" alt="Proyek 26" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/MHzt4Yqb/DSC-0413.jpg" alt="Proyek 27" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/ZnYFjKxb/DSC-0527.jpg" alt="Proyek 28" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/nzGGvQBj/DSC-0528.jpg" alt="Proyek 29" onclick="openLightbox(this.src)">
-    <img loading="lazy" src="https://i.postimg.cc/mkVVGFgv/DSC-0534.jpg" alt="Proyek 30" onclick="openLightbox(this.src)">
-  </div>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-    <div class="close" onclick="closeLightbox(event)">✕</div>
-    <img id="lightbox-img" src="" alt="Full view">
-  </div>
-
-  <div style="text-align:center;margin-top:18px">
-    <a class="btn-cta" href="https://wa.me/6282144511655?text=Halo%20saya%20mau%20pesan%20plafon%20PVC">Cek Harga & Konsultasi Gratis</a>
-  </div>
-</section>
-
-<section class="testi">
-  <div class="box">"Hasil pemasangan rapi dan sesuai jadwal. Recommended!" — <strong>Ibu Siti, BSD</strong></div>
-  <div class="box">"Tukangnya teliti, motif kayu bagus hasilnya." — <strong>Bpk. Hendra, Serpong</strong></div>
-  <div class="box">"Harga transparan & survey cepat. Mantap." — <strong>Ibu Rini, Cisauk</strong></div>
-</section>
-
-<section id="kontak" class="contact">
-  <div class="card">
-    <h3>Hubungi Mekar Jaya</h3>
-    <p class="muted">Tanyakan harga, free survey atau pesan pemasangan. Kami siap bantu dari perhitungan hingga pemasangan rapi.</p>
-
-    <p style="margin:12px 0"><strong>WhatsApp:</strong> <a href="https://wa.me/6282144511655?text=Halo%20Mekar%20Jaya%2C%20saya%20mau%20konsultasi" target="_blank">0821-4451-1655</a></p>
-    <p><strong>Jam Operasional:</strong> 08.00 – 20.00</p>
-
-    <div style="margin-top:12px">
-      <a class="btn-cta" href="https://wa.me/6282144511655?text=Halo%20Mekar%20Jaya%2C%20saya%20mau%20konsultasi">Cek Harga & Konsultasi Gratis</a>
+    <div class="review-box">
+        <b>⭐️⭐️⭐️⭐️⭐️</b>
+        <p>Sangat rapi pengerjaannya. Hasilnya bikin rumah jauh lebih terang dan bersih.</p>
+        <i>– Ibu Rina, Cisauk</i>
     </div>
-  </div>
 
-  <div class="card">
-    <h3>Lokasi</h3>
-    <p class="muted">BSD · Serpong · Cisauk · Tangerang Selatan</p>
-    <iframe class="map" src="https://www.google.com/maps?q=-6.3129339,106.6923516&z=16&output=embed" loading="lazy"></iframe>
-  </div>
+    <div class="review-box">
+        <b>⭐️⭐️⭐️⭐️⭐️</b>
+        <p>Tukangnya sopan & cepat. Recomended banget buat plafon PVC!</p>
+        <i>– Pak Andi, BSD</i>
+    </div>
+
+    <div class="review-box">
+        <b>⭐️⭐️⭐️⭐️⭐️</b>
+        <p>Hasil sesuai contoh, pemasangan cuma 1 hari. Mantap.</p>
+        <i>– Bu Maya, Serpong</i>
+    </div>
+</section>
+
+<section id="kontak" class="section">
+    <h2>Kontak</h2>
+    <p style="text-align:center;">📞 0821-4451-1655</p>
+    <p style="text-align:center;">📍 Cisauk – BSD – Tangerang</p>
+
+    <div style="text-align:center;">
+        <a class="btn" href="https://wa.me/6282144511655?text=Halo%20saya%20mau%20tanya%20soal%20pemasangan%20plafon%20PVC">
+            Konsultasi Gratis
+        </a>
+    </div>
 </section>
 
 <footer>
-  <div style="max-width:900px;margin:0 auto">
-    <div style="font-weight:700;margin-bottom:6px">Mekar Jaya Plafon PVC</div>
-    <div style="color:#98a2b3;margin-bottom:8px">Jasa pasang plafon PVC — BSD · Serpong · Cisauk</div>
-    <div style="margin-bottom:8px"><a href="https://wa.me/6282144511655?text=Halo%20Mekar%20Jaya" style="color:#fff;text-decoration:underline">0821-4451-1655 (WhatsApp)</a></div>
-    <div style="font-size:13px;color:#93a1b5">© 2025 Mekar Jaya Plafon PVC — Semua Hak Dilindungi</div>
-  </div>
+    © 2025 Mekar Jaya Plafon PVC • Dibuat untuk bisnis lokal Indonesia
 </footer>
 
-<!-- Sticky CTA (Mobile) -->
-<div class="sticky-cta">
-  <a href="https://wa.me/6282144511655?text=Halo%20Mekar%20Jaya%2C%20saya%20mau%20cek%20harga" class="btn-cta" style="width:100%;display:inline-block;text-align:center">Cek Harga & Konsultasi Gratis</a>
-</div>
-
-<script>
-  /* Lightbox */
-  function openLightbox(src){
-    var lb = document.getElementById('lightbox');
-    var img = document.getElementById('lightbox-img');
-    img.src = src;
-    lb.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox(e){
-    if(e && e.target && (e.target.id === 'lightbox' || e.target.classList.contains('close'))){
-      document.getElementById('lightbox').style.display = 'none';
-      document.body.style.overflow = '';
-    } else if(!e) {
-      document.getElementById('lightbox').style.display = 'none';
-      document.body.style.overflow = '';
-    }
-  }
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closeLightbox(); } });
-
-  /* Simple lazyload fallback (images already use loading=lazy) */
-  if('loading' in HTMLImageElement.prototype){
-    document.querySelectorAll('img[loading="lazy"]').forEach(img => { img.src = img.src; });
-  }
-
-  /* Smooth scroll for anchor links */
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click', function(e){
-      var id = this.getAttribute('href');
-      if(id.length>1){
-        e.preventDefault();
-        var el = document.querySelector(id);
-        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
-      }
-    });
-  });
-</script>
 </body>
 </html>
